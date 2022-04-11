@@ -3,6 +3,12 @@
 It's a 2D game in Python3(terminal based) , heavily inspired by Clash of Clans where the user
 will control the king, move it up, down , forward  and backward , while destroying buildings and fighting defences on its way. Concept of OOPs is present in the code.
 
+#### START
+
+The game can be started by either king or Archer Queen .![](/home/abhishek/Pictures/Screenshot from 2022-04-11 19-11-50.png) The user can choose King by pressing 1 on keyboard and ArcherQueen by pressing 2.
+
+
+
 ## CONTROLS
 
 `a` moves left
@@ -17,9 +23,17 @@ will control the king, move it up, down , forward  and backward , while destroyi
 
 ```c``` applies heal spell
 
-```e``` applies laviathan axe of king
+``` ``` space applies attack in previous direction of king and for queen in previous direction at a distance of 8 in 5x5 tiles.
 
-```p``` ```i``` ```n``` are spawning points where troops enter the village
+```e``` applies laviathan axe of king and area of effect ( 9x9 tiles from 16 tiles away from position of queen)
+
+```p``` ```i``` ```n``` are spawning points for **Barbarians**
+
+```h``` ```u``` ```j``` are spawning points for **Ballons**
+
+```k``` ```m``` ```l``` are spawning points for **Archers**
+
+
 
 ## OOPS CONCEPT
 
@@ -62,13 +76,36 @@ Abstraction in Python is the process of hiding the real implementation of an app
 ```
 ### ASSUMPTIONS
 
-* KING HEALTH = 150
-* BARBARIANS = 100
-* KING DAMAGE VALUE = 53
-* BARBARIAN DAMAGE VALUE = 10
-* TOWN HALL HEALTH = 150
-* HUTS HEALTH = 100
-* CANNON HEALTH  = 80
-* CANNON DAMAGE VALUE = 10
-* CANNON RANGE = 8
-* KING LEVIATHON AXE RADIUS = 2 ( AREA OF EFFECT : 5X5 SQUARE)
+* *KING HEALTH* = 150
+* *BARBARIANS HEALTH* = 60
+* *KING DAMAGE VALUE* = 53
+* *BARBARIAN DAMAGE VALUE* = 10
+* *TOWN HALL HEALTH* = 300
+* *HUTS HEALTH* = 100
+* *CANNON HEALTH*  = 80
+* *CANNON DAMAGE VALUE* = 10
+* *CANNON RANGE* = 8
+* *KING LEVIATHON AXE RADIUS* = 2 ( AREA OF EFFECT : 5X5 SQUARE)
+* *ARCHER DAMAGE* = 5
+* *ARCHER HEALTH* = 30
+* *ARCHER RANGE* = 5
+* *BALLOON DAMAGE* = 20
+* *BALLOON HEALTH* = 60
+* *WIZARD TOWER RANGE* = 8
+* *WIZARD TOWER HEALTH* = 80
+
+### LEVELS
+
+There are 3 levels in the game , after winning one level the user will be asked for continuing to he next level or not. The interface will be like this . ![](/home/abhishek/Pictures/Screenshot from 2022-04-11 19-34-46.png)
+
+As per the level increases the limit of troops and number of building increases.
+
+|              | Level 1 | Level 2 | Level 3 |
+| ------------ | ------- | ------- | ------- |
+| Barbarian    | 7       | 8       | 9       |
+| Archers      | 6       | 7       | 8       |
+| Balloons     | 4       | 5       | 6       |
+| Cannons      | 2       | 3       | 4       |
+| Wizard Tower | 2       | 3       | 4       |
+| Huts         | 6       | 6       | 6       |
+
