@@ -211,6 +211,10 @@ def movekey():
                             for k in range(6,7+level):
                                 if(gridCopy[j][i]==k):
                                     cans_arr[k-6].barbad(po.grid,king_body)
+                            
+                            for k in range(len(wiz_arr)):
+                                if(gridCopy[tay][tax] == chr(ord('a')+k)):
+                                    wiz_arr[k].tabbah(po.grid, king_body)
         else:
             last = movements[len(movements)-1]
             choice = {'a':[gx-16,gy],'d':[gx+16,gy],'w':[gx,gy-16],'s':[gx,gy+16]}
@@ -260,6 +264,15 @@ def movekey():
                                         break
                                 if poor == 1:
                                     break
+
+                                for k in range(len(wiz_arr)):
+                                    if(gridCopy[j][i] == chr(ord('a')+k)):
+                                        wiz_arr[k].tabbah(
+                                            po.grid, king_body)
+                                        poor = 1
+                                        break
+                                if poor == 1:
+                                    break
                     if poor == 1:
                         break
 
@@ -290,6 +303,11 @@ def movekey():
                     for k in range(6,7+level):
                         if(gridCopy[tay][tax] == k ):
                             cans_arr[k-6].tabbah(po.grid,king_body)
+
+                    for k in range(len(wiz_arr)):
+                        if(gridCopy[tay][tax] == chr(ord('a')+k)):
+                            wiz_arr[k].tabbah(po.grid,king_body)
+
         else:
             last = movements[len(movements)-1]
             choice = {'a': [gx-8, gy], 'd': [gx+8, gy],
@@ -330,6 +348,15 @@ def movekey():
                                     if(gridCopy[j][i] == k):
                                         cans_arr[k -
                                                  6].barbad(po.grid, king_body)
+                                        poor = 1
+                                        break
+                                if poor == 1:
+                                    break
+
+                                for k in range(len(wiz_arr)):
+                                    if(gridCopy[j][i] == chr(ord('a')+k)):
+                                        wiz_arr[k].tabbah(
+                                            po.grid, king_body)
                                         poor = 1
                                         break
                                 if poor == 1:
