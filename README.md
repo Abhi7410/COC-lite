@@ -74,25 +74,7 @@ Abstraction in Python is the process of hiding the real implementation of an app
     for i in range(len(Barb_arr)):
         Barb_arr[i].move(po.grid,array_cord,attack(i))
 ```
-### ASSUMPTIONS
 
-* *KING HEALTH* = 150
-* *BARBARIANS HEALTH* = 60
-* *KING DAMAGE VALUE* = 53
-* *BARBARIAN DAMAGE VALUE* = 10
-* *TOWN HALL HEALTH* = 300
-* *HUTS HEALTH* = 100
-* *CANNON HEALTH*  = 80
-* *CANNON DAMAGE VALUE* = 10
-* *CANNON RANGE* = 8
-* *KING LEVIATHON AXE RADIUS* = 2 ( AREA OF EFFECT : 5X5 SQUARE)
-* *ARCHER DAMAGE* = 5
-* *ARCHER HEALTH* = 30
-* *ARCHER RANGE* = 5
-* *BALLOON DAMAGE* = 20
-* *BALLOON HEALTH* = 60
-* *WIZARD TOWER RANGE* = 8
-* *WIZARD TOWER HEALTH* = 80
 
 ### LEVELS
 
